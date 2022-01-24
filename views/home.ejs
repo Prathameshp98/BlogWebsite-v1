@@ -4,8 +4,8 @@
 <p> <%= homeContent %> </p>
 
 <% contents.forEach(function(content){ %>
-    <h1><%=content.title%></h1>
-    <p><%=content.post.substring(0,100) + "..."%><a href="/contents/<%=content.title%>">Read More</a></p>
+    <h1><%=content.name%></h1>
+    <p><%=content.body.substring(0,100) + "..."%><a href="/posts/<%=content._id%>">Read More</a></p>
 <% }); %>
 
 
