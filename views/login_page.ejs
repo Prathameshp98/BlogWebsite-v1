@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+
+    <!-- JS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+
+    <!-- icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Vue CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js">
+
+
+
+
+  </head>
+  <body class="login-body">
+
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <div class="card card-login px-5 py-5" id="form1">
+                    <form action="/login_home" method="POST">
+                        <h1>THE DAILY JOURNAL</h1>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="emailInput" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group password-field">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="passwordInput" placeholder="Password" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-large btn-block btn-dark login-button">Login</button>
+                    </form>    
+                    <form action="/register_page">
+                        <button type="submit" class="btn btn-large btn-block btn-dark">Set up a New Account</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script src="/Js/index.js"></script>
+  </body>
+</html>

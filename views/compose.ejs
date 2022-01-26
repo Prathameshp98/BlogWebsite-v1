@@ -1,4 +1,4 @@
-<%- include("partials/header"); -%>
+<%- include("partials/login_header"); -%>
 
 <h1>Compose</h1>
 
@@ -12,7 +12,7 @@
         <label for="exampleFormControlTextarea1">Post</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" name="postBody"></textarea>
     </div>
-    <button type="submit" class="btn btn-primary" name="button">Publish</button>
+    <button type="submit" id="compose-button-settings" class="btn btn-secondary" name="button">Publish</button>
 </form>
 
 <%- include("partials/footer"); -%>

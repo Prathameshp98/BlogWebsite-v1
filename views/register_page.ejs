@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+
+    <!-- JS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body class="login-body">
+
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <div class="card card-register px-5 py-5" id="form1">
+
+                    <form action="/register_page" method="POST">
+                        <h1>THE DAILY JOURNAL</h1>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="emailInput" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="passwordInput">
+                            <small id="passHelp" class="form-text text-muted">
+                                <ul>
+                                    <li>should contain minimum 8 characters</li>
+                                    <li>should contain atleast a UpperCase character</li>
+                                    <li>should contain atleast a UpperCase character</li>
+                                    <li>should contain alteast a Number</li>
+                                </ul>
+                            </small>
+                        </div>
+                        <div class="form-group re-enter-password" >
+                            <label for="exampleInputPassword1">Re-Enter Password</label>
+                            <input type="password" class="form-control " id="rePassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="passwordInput2">
+                            <span id="message"></span>
+                        </div>
+                        <button id="submitButton" type="submit" class="btn btn-large btn-block btn-dark">Create Account</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script src="/Js/index.js"></script>
+  </body>
+</html>
