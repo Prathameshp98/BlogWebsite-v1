@@ -1,5 +1,6 @@
 //jshint esversion:6
 
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -20,7 +21,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin_prathamesh:1210Nanu@cluster0.hm590.mongodb.net/blogDB");
+const SECRET = process.env.DATABASE_KEY;
+mongoose.connect(SECRET);
 
 //create post sechema
 const postSchema = mongoose.Schema({
@@ -233,7 +235,7 @@ app.get("/compose",function(req,res){
 app.post("/compose",function(req,res){
 
     const fullUser = req.query.fullUser;
-    
+
     const newPost = new Post({
         name: _.lowerCase(req.body.titleBody),
         body: req.body.postBody 
