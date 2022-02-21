@@ -5,7 +5,7 @@
 
 <% contents.forEach(function(content){ %>
     <h1><%=content.name%></h1>
-    <p><%=content.body.substring(0,200) + "..."%><a href="/posts/<%=content._id%>">Continue Reading</a></p>
+    <p><%=content.body.substring(0,200) + "..."%><a href="/posts/<%=content._id%>/fullUser/<%= fullUser %>">Continue Reading</a></p>
 <% }); %>
 
 
